@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mail Form PHP</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+  </head>
+  <body>
+
+    <form action="send_email.php" method="post">
+      <fieldset>
+        <legend>Send Mail</legend>
+        <p>
+            <label for="civilite">Civilité :</label>
+            <select id="civilite" name="civilite">
+                <option value="M" selected="selected">Monsieur</option>
+                <option value="Mme">Madame</option>
+                <option value="Mlle">Mademoiselle</option>
+            </select>
+        </p>
+        <p>
+            <label for="nom">Prénom / Nom :</label>
+            <input type="text" id="nom" name="nom" />
+        </p>
+        <p>
+            <label for="email">E-mail :</label>
+            <input type="text" id="email" name="email" />
+        </p>
+        <p>
+            <label for="sujet">Sujet :</label>
+            <input type="text" id="sujet" name="sujet" />
+        </p>
+        <p>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" cols="40" rows="4"></textarea>
+        </p>
+        <p>
+            <input type="submit" id="envoye" name="envoye" value="Envoyer" />
+        </p>
+        </fieldset>
+    </form>
+
+  </body>
+</html>

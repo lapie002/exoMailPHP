@@ -7,7 +7,7 @@
   </head>
   <body>
 
-    <form action="send_email.php" method="post">
+    <form action="send_email.php" method="post" enctype="multipart/form-data">
       <fieldset>
         <legend>Send Mail</legend>
         <p>
@@ -33,6 +33,10 @@
         <p>
             <label for="message">Message :</label>
             <textarea id="message" name="message" cols="40" rows="4"></textarea>
+        </p>
+        <p>
+          <label for="piece">Piece Jointe :</label>
+          <input type="file" name="fileToUpload" id="fileToUpload">
         </p>
         <p>
             <input type="submit" id="envoye" name="envoye" value="Envoyer" />

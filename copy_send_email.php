@@ -114,5 +114,4 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
       echo "</html>";
 		}
 
-
 ?>
